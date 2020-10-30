@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link src="D:\vue框架学习\day02\case1\node_modules\bootstrap\dist\css\bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+			
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			body{
+				background-image: url(https://s1.ax1x.com/2020/10/29/BJE9aR.jpg);
+				/*background-size:100% 100%;
+				 background-repeat:no-repeat;*/
+				background-attachment:fixed;
+				background-repeat:no-repeat;
+				background-size:cover;
+				-moz-background-size:cover;
+				-webkit-background-size:cover;
+			}
+			.top{
+				width: 500px;
+				height: 400px;
+				color: #ff9999;
+				margin: 70px auto;
+				border: 5px solid violet;
+				background-color: white;
+			}
+			.title{
+				width: 100%;
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+				margin： 0 auto;
+				font-size: 45px;
+			}
+			#myfrom{
+				position: relative;
+			}
+			.somtitle{
+				margin: 0 auto;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				font-size: 25px;
+			}
+			.shuru{
+				width: 100%;
+				
+				display: flex;
+				flex-direction: column;
+				
+			}
+			.shuru1{
+				flex: 1;
+				
+				
+				margin: 15px 30px;
+			}
+			.xianze{
+				display: flex;
+				
+			}
+			.btn{
+				flex: 1;
+				margin: 20px 20px;
+				
+			}
+			.zuce{
+				position: absolute;
+				right: 60px;
+				bottom: 55px;
+				text-align: center;
+				
+				font-size: 25px;
+			}
+			.txt{
+				position: absolute;
+				left: 40px;
+				bottom: 60px;
+				text-align:left;
+				font-size: 20px;
+			}
+		</style>
+		<script type="text/javascript">
+			function go_login(){
+				var myfrom = document.getElementById("myfrom")
+				var uname = document.getElementById("name").value;
+				var upassword = document.getElementById("password").value
+				myfrom.submit();
+			}
+		</script>
+		
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="myda.php">登录</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="zuce.html">注册 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+		
+		<div class="title">欢迎访问myweb</div>
+			
+		<div id="">
+			
+			<form id="myfrom" action="login.php" method="post" class="top">
+				<div id="" class="somtitle">
+					登录
+				</div>
+				<hr />
+				<div id="" class="shuru">
+					<input type="text" id="name" name="name" class="shuru1" size="16" placeholder="用户名" />
+				<input type="text" id="password" name="password" class="shuru1" size="16" placeholder="密码" />
+				</div>
+				<div id="" class="xianze">
+					<input class="btn" type="submit" value="登录"/>
+				<input class="btn" type="button" value="退出"/>
+				
+				</div>
+				<div id="" class="txt">
+					没有账号 来这边点击注册吧！->
+				</div>
+				<a href="zuce.html" class="zuce">点击注册</a>
+			</form>
+		</div>
+	</body>
+</html>
